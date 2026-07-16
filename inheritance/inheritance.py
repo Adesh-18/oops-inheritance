@@ -173,3 +173,7 @@ d1.method_a()
 d1.method_b()
 d1.method_c()
 d1.method_d()
+
+#it combines hierarchical inheritance: A --> B and A --> C
+# multiple inheritance: D inherits from B and C
+
