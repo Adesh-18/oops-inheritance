@@ -61,4 +61,3 @@ class Student:
         print(self.__marks)
 student = Student()
 student.show_marks()
-print(student_marks)

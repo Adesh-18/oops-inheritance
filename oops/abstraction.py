@@ -62,3 +62,4 @@ class Dog(Animal):
         print("bark")
 dog = Dog()
 dog.sound()
+# Abstraction → "Define what must be done, but let the child decide how to do it."

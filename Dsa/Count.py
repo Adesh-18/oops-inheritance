@@ -57,4 +57,26 @@ print("Odd Count:",odd)
 print("Even Sum:",Even_Sum)
 print("Odd Sum:",Odd_Sum)
 
+'''
+Time Complexity
+
+Suppose there are 5 numbers.
+
+The first number checks with 4 others.
+
+The second checks with 3 others.
+
+The third checks with 2 others.
+
+The fourth checks with 1 other.
+
+4 + 3 + 2 + 1
+
+This grows roughly as:
+
+O(n²)
+
+So the brute-force solution is slow for large arrays.
+'''
+
 
