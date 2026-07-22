@@ -428,3 +428,206 @@ for num in numbers:
 
 print("Largest:", largest)
 print("Smallest:", smallest)
+
+#count positive and negative numbers
+numbers = [10,-5,20,-8,0,15,-2]
+positive = 0
+negative = 0
+zero = 0
+for num in numbers:
+    if num>0:
+        positive +=1
+    elif num<0:
+        negative +=1
+    else:
+        zero += 1
+print("Positive:", positive)
+print("Negative:", negative)
+print("Zero:", zero)
+
+
+
+numbers = [1,2,3,-1,-2,-3,0]
+positive = 0
+negative = 0
+zero = 0
+for num in numbers:
+    if num > 0:
+        positive += 1
+    elif num < 0:
+        negative += 1
+    else:
+        zero += 1
+print("positive:",positive)
+print("negative:",negative)
+print("zero:",zero)
+
+
+#count vowels and consonants in a string
+text = "python"
+vowels = 0
+consonants = 0
+for ch in text:
+    if ch in "aeiou":
+        vowels += 1
+    else:
+        consonants +=1
+print("vowels count:",vowels)
+print("Consonants:",consonants)
+
+
+def greet():
+    print("Hello")
+
+print("Start")
+greet()
+print("End")
+
+
+def greet():
+    print("Welcome to python")
+greet()
+
+# function with parameter
+def greet(name):
+    print("Hello:",name)
+greet("adesh")
+
+# function with return value
+def add(a,b):
+    return a + b
+result = add(10,20)
+print(result)
+
+
+def add (a,b):
+    return a + b
+adds = add(5,7)
+print(adds)
+
+
+def add (a,b):
+    return a + b
+x = add(10,20)
+y = x * 2
+
+print(y)
+
+# square of a number using return
+def square(a):
+    return a*a
+
+x = square(6)
+print(x)
+
+#cube of a number
+def cube(a):
+    return a ** 3
+x = cube(3)
+print(x)
+
+# a number is even or odd
+def check_even_odd(num):
+    if num % 2 == 0:
+        print("Even")
+    else:
+        print("Odd")
+
+check_even_odd(7)
+
+#default parameters
+def greet(name = "Guest"):
+    print("Hello",name)
+greet()
+greet("Adesh")
+
+# dictionary
+# student = {
+#     "Name":"Adesh",
+#     "Age": 21,
+#     "Branch":"Cse"
+# }
+
+# print(student["Name"])
+# print(student["Age"])
+# print(student["Branch"])
+# #add new value to it
+# # student["Age"] = "22"
+# student["city"] = "Vizag"
+# print(student["city"])
+
+#challenge 2
+# student = {
+#     "Name": "Adesh",
+#     "Age": 21,
+#     "City": "Vizag"
+# }
+# student["Age"] = "22"
+# student["City"] = "Hyderbad"
+# for i in student:
+#     print(i, ":", student[i])
+# for i in student:
+#     print(student[i])#student[i] gets the corresponding value.
+
+
+# student = {
+#     "Name": "Adesh",
+#     "Age": 22,
+#     "City": "Hyderabad"
+# }
+# for i in student:
+#     print(i,":",student[i])
+
+#items
+student = {
+    "Name": "Adesh",
+    "Age": 22,
+    "City": "Hyderabad"
+}
+for key,value in student.items():
+    print(key,":",value)
+
+student = {
+    "Name": "Adesh",
+    "Age": 22,
+    "City": "Hyderabad"
+}
+print(student.keys())
+print(student.values())
+print(student.items())
+
+student = {
+    "Name": "Adesh",
+    "Age": 22,
+    "City": "Hyderabad"
+}
+print(student.get('Name'))
+print(student.get("Phone"))
+print(student.get("phone","Not found"))
+
+
+student = {
+    "Name": "Adesh",
+    "Age": 22,
+    "City": "Hyderabad"
+}
+
+print(student.get("Name"))
+print(student.get("City"))
+print(student.get("College"))
+print(student.get("College", "QIS not found"))
+
+
+#removing items from dictionary
+#pop() POPITEM() clear()
+student = {
+    "Name": "Adesh",
+    "Age": 22,
+    "City": "Hyderabad"
+}
+
+student.pop("Age")#It removes a specific key from the dictionary.
+
+print(student)
+
+
