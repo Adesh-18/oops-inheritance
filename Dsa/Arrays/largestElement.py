@@ -15,6 +15,6 @@ for num in arr:
     if num > largest:
         second = largest
         largest = num
-    elif second > largest and second != largest:
+    elif num > second and num != largest:
         second = num
 print(largest)

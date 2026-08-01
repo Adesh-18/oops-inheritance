@@ -133,3 +133,37 @@ for num in numbers:
        second = num
 print("Largest",largest)
 print("Second Largest",second)
+
+
+#pop item
+#pop item() removes the last inserted key value pair from the dictionary.
+Student = {
+    "name":"Adesh",
+    "Age": 21,
+    "City":"Hyderbad"#popitem removed it
+}
+Student.popitem()
+print(Student)
+
+#returns the removed item
+Student = {
+    "name":"Adesh",
+    "Age": 21,
+    "City":"Hyderbad"#popitem removed it
+}
+x = Student.popitem()
+print(x)
+print(Student)
+# pop() returns only the value.
+# popitem() returns both the key and value as a tuple.
+
+# clear()
+Student = {
+     "Name" : "Adesh",
+     "Age" : 22,
+     "City":"Vizag"
+
+}
+Student.clear()
+print(Student)
+

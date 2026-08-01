@@ -8,7 +8,7 @@ for num in arr:
         largest = num
 print(largest)
 
-
+#smallest in a array
 arr = [5,8,4,9,10]
 smallest = arr[0]
 for num in arr:
